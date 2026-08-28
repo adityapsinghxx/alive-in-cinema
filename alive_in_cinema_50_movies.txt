@@ -1,0 +1,104 @@
+ALIVE IN CINEMA — 50-MOVIE PROTOTYPE DATASET
+
+Scores are provisional editorial scores from 0–10 and describe the movie experience, not movie quality.
+
+1. Interstellar (2014) — USA / English — Sci-Fi,Drama
+   psychological=7, darkness=5, mystery=8, suspense=7, action=6, comedy=2, romance=7, slow_burn=8, ambiguity=7, character_focus=8
+2. The Martian (2015) — USA / English — Sci-Fi,Drama
+   psychological=5, darkness=3, mystery=7, suspense=6, action=5, comedy=5, romance=2, slow_burn=5, ambiguity=3, character_focus=7
+3. Mad Max: Fury Road (2015) — USA/Australia / English — Action,Sci-Fi
+   psychological=3, darkness=6, mystery=2, suspense=10, action=10, comedy=4, romance=2, slow_burn=1, ambiguity=3, character_focus=6
+4. The Revenant (2015) — USA / English — Drama,Adventure
+   psychological=7, darkness=9, mystery=4, suspense=8, action=7, comedy=1, romance=2, slow_burn=8, ambiguity=5, character_focus=9
+5. Deadpool (2016) — USA / English — Action,Comedy
+   psychological=4, darkness=3, mystery=2, suspense=8, action=8, comedy=10, romance=4, slow_burn=2, ambiguity=3, character_focus=6
+6. La La Land (2016) — USA / English — Romance,Musical,Drama
+   psychological=5, darkness=2, mystery=1, suspense=2, action=1, comedy=5, romance=10, slow_burn=7, ambiguity=5, character_focus=9
+7. Arrival (2016) — USA / English — Sci-Fi,Mystery,Drama
+   psychological=8, darkness=5, mystery=9, suspense=8, action=2, comedy=1, romance=4, slow_burn=7, ambiguity=9, character_focus=8
+8. Get Out (2017) — USA / English — Horror,Thriller,Mystery
+   psychological=9, darkness=8, mystery=9, suspense=9, action=2, comedy=3, romance=3, slow_burn=6, ambiguity=8, character_focus=9
+9. Dunkirk (2017) — USA/UK / English — War,Action,Thriller
+   psychological=4, darkness=7, mystery=2, suspense=10, action=8, comedy=1, romance=2, slow_burn=2, ambiguity=3, character_focus=6
+10. Blade Runner 2049 (2017) — USA/Canada / English — Sci-Fi,Mystery,Drama
+   psychological=8, darkness=7, mystery=8, suspense=7, action=4, comedy=1, romance=3, slow_burn=9, ambiguity=9, character_focus=8
+11. Avengers: Infinity War (2018) — USA / English — Action,Superhero
+   psychological=5, darkness=6, mystery=3, suspense=9, action=10, comedy=7, romance=4, slow_burn=4, ambiguity=3, character_focus=7
+12. Spider-Man: Into the Spider-Verse (2018) — USA / English — Animation,Action,Comedy
+   psychological=5, darkness=3, mystery=3, suspense=7, action=8, comedy=8, romance=4, slow_burn=4, ambiguity=4, character_focus=8
+13. A Quiet Place (2018) — USA / English — Horror,Thriller
+   psychological=7, darkness=9, mystery=7, suspense=10, action=2, comedy=0, romance=2, slow_burn=6, ambiguity=7, character_focus=7
+14. Joker (2019) — USA / English — Psychological,Crime,Drama
+   psychological=10, darkness=10, mystery=7, suspense=9, action=4, comedy=1, romance=1, slow_burn=8, ambiguity=9, character_focus=10
+15. Parasite (2019) — South Korea / Korean — Thriller,Drama,Comedy
+   psychological=8, darkness=7, mystery=10, suspense=8, action=3, comedy=6, romance=4, slow_burn=7, ambiguity=8, character_focus=9
+16. Avengers: Endgame (2019) — USA / English — Action,Superhero,Drama
+   psychological=6, darkness=6, mystery=3, suspense=9, action=10, comedy=7, romance=5, slow_burn=4, ambiguity=4, character_focus=8
+17. Knives Out (2019) — USA / English — Mystery,Comedy
+   psychological=5, darkness=3, mystery=10, suspense=8, action=3, comedy=8, romance=3, slow_burn=5, ambiguity=4, character_focus=6
+18. Everything Everywhere All at Once (2022) — USA / English — Action,Comedy,Sci-Fi
+   psychological=8, darkness=5, mystery=5, suspense=8, action=9, comedy=9, romance=7, slow_burn=4, ambiguity=9, character_focus=9
+19. Top Gun: Maverick (2022) — USA / English — Action,Drama
+   psychological=4, darkness=4, mystery=1, suspense=9, action=10, comedy=5, romance=4, slow_burn=1, ambiguity=2, character_focus=7
+20. The Batman (2022) — USA / English — Crime,Mystery,Action
+   psychological=8, darkness=8, mystery=8, suspense=9, action=7, comedy=2, romance=2, slow_burn=6, ambiguity=7, character_focus=9
+21. Oppenheimer (2023) — USA / English — Drama,History,Thriller
+   psychological=9, darkness=7, mystery=6, suspense=7, action=2, comedy=1, romance=3, slow_burn=8, ambiguity=8, character_focus=10
+22. Barbie (2023) — USA / English — Comedy,Romance
+   psychological=5, darkness=3, mystery=1, suspense=2, action=2, comedy=9, romance=9, slow_burn=6, ambiguity=4, character_focus=8
+23. Guardians of the Galaxy Vol. 3 (2023) — USA / English — Action,Comedy,Sci-Fi
+   psychological=6, darkness=5, mystery=3, suspense=8, action=8, comedy=8, romance=6, slow_burn=4, ambiguity=6, character_focus=8
+24. Dune: Part Two (2024) — USA/Canada / English — Sci-Fi,Action,Drama
+   psychological=6, darkness=6, mystery=6, suspense=9, action=10, comedy=2, romance=3, slow_burn=6, ambiguity=8, character_focus=8
+25. Inside Out 2 (2024) — USA / English — Animation,Comedy,Drama
+   psychological=8, darkness=2, mystery=1, suspense=3, action=1, comedy=8, romance=5, slow_burn=5, ambiguity=5, character_focus=9
+26. Deadpool & Wolverine (2024) — USA / English — Action,Comedy,Superhero
+   psychological=5, darkness=5, mystery=2, suspense=8, action=9, comedy=8, romance=5, slow_burn=2, ambiguity=2, character_focus=7
+27. F1 (2025) — USA / English — Action,Sports,Drama
+   psychological=4, darkness=4, mystery=1, suspense=8, action=9, comedy=3, romance=2, slow_burn=3, ambiguity=2, character_focus=7
+28. Superman (2025) — USA / English — Action,Superhero,Adventure
+   psychological=5, darkness=4, mystery=3, suspense=7, action=8, comedy=6, romance=5, slow_burn=5, ambiguity=4, character_focus=8
+29. The Godfather (1972) — USA / English — Crime,Drama
+   psychological=9, darkness=8, mystery=4, suspense=7, action=5, comedy=2, romance=5, slow_burn=9, ambiguity=5, character_focus=10
+30. Rocky (1976) — USA / English — Drama,Sports
+   psychological=7, darkness=4, mystery=2, suspense=7, action=5, comedy=5, romance=6, slow_burn=6, ambiguity=3, character_focus=9
+31. The Shining (1980) — USA/UK / English — Horror,Psychological
+   psychological=9, darkness=9, mystery=7, suspense=9, action=4, comedy=0, romance=1, slow_burn=9, ambiguity=8, character_focus=9
+32. Back to the Future (1985) — USA / English — Sci-Fi,Comedy,Adventure
+   psychological=4, darkness=3, mystery=8, suspense=6, action=6, comedy=8, romance=4, slow_burn=3, ambiguity=2, character_focus=7
+33. The Silence of the Lambs (1991) — USA / English — Thriller,Crime,Horror
+   psychological=9, darkness=9, mystery=9, suspense=10, action=4, comedy=1, romance=2, slow_burn=7, ambiguity=7, character_focus=9
+34. Goodfellas (1990) — USA / English — Crime,Drama
+   psychological=7, darkness=7, mystery=5, suspense=7, action=5, comedy=2, romance=4, slow_burn=8, ambiguity=5, character_focus=10
+35. Forrest Gump (1994) — USA / English — Drama,Romance,Comedy
+   psychological=5, darkness=3, mystery=1, suspense=3, action=3, comedy=6, romance=8, slow_burn=5, ambiguity=3, character_focus=9
+36. Fight Club (1999) — USA / English — Psychological,Drama,Thriller
+   psychological=10, darkness=9, mystery=8, suspense=8, action=6, comedy=4, romance=2, slow_burn=7, ambiguity=10, character_focus=10
+37. The Matrix (1999) — USA / English — Sci-Fi,Action
+   psychological=5, darkness=4, mystery=6, suspense=8, action=9, comedy=5, romance=2, slow_burn=4, ambiguity=6, character_focus=6
+38. The Dark Knight (2008) — USA/UK / English — Crime,Action,Drama
+   psychological=8, darkness=8, mystery=6, suspense=9, action=9, comedy=3, romance=3, slow_burn=5, ambiguity=7, character_focus=9
+39. The Lord of the Rings: The Fellowship of the Ring (2001) — USA/New Zealand / English — Fantasy,Adventure
+   psychological=7, darkness=5, mystery=2, suspense=6, action=7, comedy=4, romance=2, slow_burn=2, ambiguity=2, character_focus=8
+40. Titanic (1997) — USA / English — Romance,Drama
+   psychological=6, darkness=4, mystery=3, suspense=7, action=2, comedy=3, romance=2, slow_burn=5, ambiguity=4, character_focus=9
+41. 3 Idiots (2009) — India / Hindi — Comedy,Drama
+   psychological=6, darkness=2, mystery=2, suspense=3, action=2, comedy=9, romance=6, slow_burn=5, ambiguity=2, character_focus=10
+42. Dangal (2016) — India / Hindi — Drama,Sports
+   psychological=7, darkness=4, mystery=2, suspense=7, action=5, comedy=5, romance=6, slow_burn=6, ambiguity=3, character_focus=9
+43. Andhadhun (2018) — India / Hindi — Thriller,Crime,Comedy
+   psychological=9, darkness=8, mystery=9, suspense=9, action=6, comedy=8, romance=4, slow_burn=6, ambiguity=8, character_focus=9
+44. Gully Boy (2019) — India / Hindi — Drama,Music
+   psychological=6, darkness=7, mystery=2, suspense=7, action=7, comedy=4, romance=3, slow_burn=4, ambiguity=3, character_focus=8
+45. Animal (2023) — India / Hindi — Crime,Action,Drama
+   psychological=7, darkness=6, mystery=4, suspense=9, action=8, comedy=6, romance=3, slow_burn=3, ambiguity=3, character_focus=8
+46. Chhaava (2025) — India / Hindi — Historical,Drama,Action
+   psychological=7, darkness=6, mystery=4, suspense=8, action=7, comedy=4, romance=5, slow_burn=5, ambiguity=4, character_focus=8
+47. Baahubali: The Beginning (2015) — India / Telugu — Action,Fantasy,Drama
+   psychological=6, darkness=5, mystery=3, suspense=8, action=10, comedy=7, romance=6, slow_burn=2, ambiguity=2, character_focus=8
+48. RRR (2022) — India / Telugu — Action,Drama
+   psychological=6, darkness=5, mystery=3, suspense=8, action=9, comedy=6, romance=4, slow_burn=4, ambiguity=4, character_focus=8
+49. Kantara (2022) — India / Kannada — Action,Drama,Thriller
+   psychological=7, darkness=6, mystery=7, suspense=9, action=5, comedy=4, romance=3, slow_burn=7, ambiguity=6, character_focus=9
+50. Manjummel Boys (2024) — India / Malayalam — Drama,Thriller,Adventure
+   psychological=6, darkness=4, mystery=3, suspense=7, action=2, comedy=3, romance=2, slow_burn=5, ambiguity=4, character_focus=9

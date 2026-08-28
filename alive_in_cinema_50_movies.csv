@@ -1,0 +1,51 @@
+id,title,year,country,language,genres,psychological,darkness,mystery,suspense,action,comedy,romance,slow_burn,ambiguity,character_focus
+1,Interstellar,2014,USA,English,"Sci-Fi,Drama",7,5,8,7,6,2,7,8,7,8
+2,The Martian,2015,USA,English,"Sci-Fi,Drama",5,3,7,6,5,5,2,5,3,7
+3,Mad Max: Fury Road,2015,USA/Australia,English,"Action,Sci-Fi",3,6,2,10,10,4,2,1,3,6
+4,The Revenant,2015,USA,English,"Drama,Adventure",7,9,4,8,7,1,2,8,5,9
+5,Deadpool,2016,USA,English,"Action,Comedy",4,3,2,8,8,10,4,2,3,6
+6,La La Land,2016,USA,English,"Romance,Musical,Drama",5,2,1,2,1,5,10,7,5,9
+7,Arrival,2016,USA,English,"Sci-Fi,Mystery,Drama",8,5,9,8,2,1,4,7,9,8
+8,Get Out,2017,USA,English,"Horror,Thriller,Mystery",9,8,9,9,2,3,3,6,8,9
+9,Dunkirk,2017,USA/UK,English,"War,Action,Thriller",4,7,2,10,8,1,2,2,3,6
+10,Blade Runner 2049,2017,USA/Canada,English,"Sci-Fi,Mystery,Drama",8,7,8,7,4,1,3,9,9,8
+11,Avengers: Infinity War,2018,USA,English,"Action,Superhero",5,6,3,9,10,7,4,4,3,7
+12,Spider-Man: Into the Spider-Verse,2018,USA,English,"Animation,Action,Comedy",5,3,3,7,8,8,4,4,4,8
+13,A Quiet Place,2018,USA,English,"Horror,Thriller",7,9,7,10,2,0,2,6,7,7
+14,Joker,2019,USA,English,"Psychological,Crime,Drama",10,10,7,9,4,1,1,8,9,10
+15,Parasite,2019,South Korea,Korean,"Thriller,Drama,Comedy",8,7,10,8,3,6,4,7,8,9
+16,Avengers: Endgame,2019,USA,English,"Action,Superhero,Drama",6,6,3,9,10,7,5,4,4,8
+17,Knives Out,2019,USA,English,"Mystery,Comedy",5,3,10,8,3,8,3,5,4,6
+18,Everything Everywhere All at Once,2022,USA,English,"Action,Comedy,Sci-Fi",8,5,5,8,9,9,7,4,9,9
+19,Top Gun: Maverick,2022,USA,English,"Action,Drama",4,4,1,9,10,5,4,1,2,7
+20,The Batman,2022,USA,English,"Crime,Mystery,Action",8,8,8,9,7,2,2,6,7,9
+21,Oppenheimer,2023,USA,English,"Drama,History,Thriller",9,7,6,7,2,1,3,8,8,10
+22,Barbie,2023,USA,English,"Comedy,Romance",5,3,1,2,2,9,9,6,4,8
+23,Guardians of the Galaxy Vol. 3,2023,USA,English,"Action,Comedy,Sci-Fi",6,5,3,8,8,8,6,4,6,8
+24,Dune: Part Two,2024,USA/Canada,English,"Sci-Fi,Action,Drama",6,6,6,9,10,2,3,6,8,8
+25,Inside Out 2,2024,USA,English,"Animation,Comedy,Drama",8,2,1,3,1,8,5,5,5,9
+26,Deadpool & Wolverine,2024,USA,English,"Action,Comedy,Superhero",5,5,2,8,9,8,5,2,2,7
+27,F1,2025,USA,English,"Action,Sports,Drama",4,4,1,8,9,3,2,3,2,7
+28,Superman,2025,USA,English,"Action,Superhero,Adventure",5,4,3,7,8,6,5,5,4,8
+29,The Godfather,1972,USA,English,"Crime,Drama",9,8,4,7,5,2,5,9,5,10
+30,Rocky,1976,USA,English,"Drama,Sports",7,4,2,7,5,5,6,6,3,9
+31,The Shining,1980,USA/UK,English,"Horror,Psychological",9,9,7,9,4,0,1,9,8,9
+32,Back to the Future,1985,USA,English,"Sci-Fi,Comedy,Adventure",4,3,8,6,6,8,4,3,2,7
+33,The Silence of the Lambs,1991,USA,English,"Thriller,Crime,Horror",9,9,9,10,4,1,2,7,7,9
+34,Goodfellas,1990,USA,English,"Crime,Drama",7,7,5,7,5,2,4,8,5,10
+35,Forrest Gump,1994,USA,English,"Drama,Romance,Comedy",5,3,1,3,3,6,8,5,3,9
+36,Fight Club,1999,USA,English,"Psychological,Drama,Thriller",10,9,8,8,6,4,2,7,10,10
+37,The Matrix,1999,USA,English,"Sci-Fi,Action",5,4,6,8,9,5,2,4,6,6
+38,The Dark Knight,2008,USA/UK,English,"Crime,Action,Drama",8,8,6,9,9,3,3,5,7,9
+39,The Lord of the Rings: The Fellowship of the Ring,2001,USA/New Zealand,English,"Fantasy,Adventure",7,5,2,6,7,4,2,2,2,8
+40,Titanic,1997,USA,English,"Romance,Drama",6,4,3,7,2,3,2,5,4,9
+41,3 Idiots,2009,India,Hindi,"Comedy,Drama",6,2,2,3,2,9,6,5,2,10
+42,Dangal,2016,India,Hindi,"Drama,Sports",7,4,2,7,5,5,6,6,3,9
+43,Andhadhun,2018,India,Hindi,"Thriller,Crime,Comedy",9,8,9,9,6,8,4,6,8,9
+44,Gully Boy,2019,India,Hindi,"Drama,Music",6,7,2,7,7,4,3,4,3,8
+45,Animal,2023,India,Hindi,"Crime,Action,Drama",7,6,4,9,8,6,3,3,3,8
+46,Chhaava,2025,India,Hindi,"Historical,Drama,Action",7,6,4,8,7,4,5,5,4,8
+47,Baahubali: The Beginning,2015,India,Telugu,"Action,Fantasy,Drama",6,5,3,8,10,7,6,2,2,8
+48,RRR,2022,India,Telugu,"Action,Drama",6,5,3,8,9,6,4,4,4,8
+49,Kantara,2022,India,Kannada,"Action,Drama,Thriller",7,6,7,9,5,4,3,7,6,9
+50,Manjummel Boys,2024,India,Malayalam,"Drama,Thriller,Adventure",6,4,3,7,2,3,2,5,4,9
