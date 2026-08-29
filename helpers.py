@@ -392,4 +392,3 @@ def get_poster_filename(movie_title):
 
 
 
-# AI assistance was used during development for debugging,troubleshooting, implementation guidance.
