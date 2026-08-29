@@ -270,7 +270,6 @@ def get_cinema_dna_statement(user_dna):
         qualities[2]
     )
 
-
 def recommend_movies(user_dna):
 
     movies = get_all_movies()
@@ -278,6 +277,9 @@ def recommend_movies(user_dna):
     recommendations = []
 
     for movie in movies:
+
+        if movie["title"].lower() == "chhaava":
+            continue
 
         match = calculate_movie_match(
             user_dna,
@@ -298,8 +300,9 @@ def recommend_movies(user_dna):
             "match": match,
             "match_dimensions": match_dimensions,
             "explanation": explanation,
-            "poster" : get_poster_filename(movie["title"])
+            "poster": get_poster_filename(movie["title"])
         })
+
 
     recommendations.sort(
         key=lambda item: item["match"],
