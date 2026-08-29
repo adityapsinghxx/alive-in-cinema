@@ -1,0 +1,1769 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
+
+
+:root {
+
+    --background: #f4f0ea;
+    --surface: #faf8f4;
+
+    --text: #252321;
+    --muted: #77716b;
+    --light-muted: #a59e96;
+
+    --accent: #b9473f;
+    --accent-dark: #963a34;
+
+    --border: #d9d1c8;
+
+    --bar-background: #ded7cf;
+
+    --max-width: 1200px;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    font-family: "DM Sans", sans-serif;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+
+    padding: 28px 32px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.brand {
+
+    text-decoration: none;
+
+    color: var(--text);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.22em;
+
+}
+
+
+.brand span {
+
+    color: var(--accent);
+
+}
+
+
+.header-button {
+
+    text-decoration: none;
+
+    color: var(--text);
+
+    border: 1px solid var(--text);
+
+    padding: 9px 18px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.15em;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.header-button:hover {
+
+    background: var(--text);
+
+    color: var(--background);
+
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.profile-page {
+
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+
+    padding: 90px 32px 120px;
+
+}
+
+
+/* =========================
+   DNA INTRO
+========================= */
+
+.dna-intro {
+
+    max-width: 700px;
+
+    margin-bottom: 70px;
+
+}
+
+
+.section-label {
+
+    color: var(--accent);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.20em;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+}
+
+
+.dna-intro h1 {
+
+    margin: 0 0 24px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(64px, 8vw, 105px);
+
+    font-weight: 500;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.035em;
+
+}
+
+
+.intro-text {
+
+    max-width: 560px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+.cinema-statement {
+
+    max-width: 650px;
+
+    margin: 28px 0 0;
+
+    color: var(--text);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 24px;
+
+    line-height: 1.45;
+
+}
+
+
+/* =========================
+   DNA
+========================= */
+
+.dna-section {
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+    padding: 35px 0;
+
+    margin-bottom: 120px;
+
+}
+
+
+.dna-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+}
+
+
+.dna-row {
+
+    display: grid;
+
+    grid-template-columns: 170px 1fr 70px;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.dna-name {
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+
+
+.dna-bar {
+
+    height: 4px;
+
+    background: var(--bar-background);
+
+    overflow: hidden;
+
+}
+
+
+.dna-fill {
+
+    height: 100%;
+
+    background: var(--accent);
+
+}
+
+
+.dna-score {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    text-align: right;
+
+}
+
+
+/* =========================
+   MOVIES
+========================= */
+
+.movies-section {
+
+    margin-bottom: 100px;
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 35px;
+
+}
+
+
+.section-heading h2 {
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 5vw, 68px);
+
+    font-weight: 500;
+
+    line-height: 1;
+
+}
+
+
+.heading-note {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    letter-spacing: 0.08em;
+
+}
+
+
+/* =========================
+   FEATURED MOVIE
+========================= */
+
+.featured-movie {
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    min-height: 560px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    margin-bottom: 24px;
+
+}
+
+
+.featured-info {
+
+    padding: 55px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.movie-number {
+
+    color: var(--accent);
+
+    font-size: 13px;
+
+    letter-spacing: 0.15em;
+
+    margin-bottom: 35px;
+
+}
+
+
+.featured-info h3 {
+
+    margin: 0 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 5vw, 72px);
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    letter-spacing: -0.035em;
+
+}
+
+
+.match-score {
+
+    color: var(--accent);
+
+    font-size: 31px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+}
+
+
+.match-score span {
+
+    font-size: 11px;
+
+    letter-spacing: 0.18em;
+
+    margin-left: 7px;
+
+}
+
+
+.movie-meta {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+.movie-meta span {
+
+    margin: 0 7px;
+
+    color: var(--light-muted);
+
+}
+
+
+.match-explanation {
+
+    margin-top: 55px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.explanation-label {
+
+    color: var(--accent);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+
+    margin-bottom: 12px;
+
+}
+
+
+.match-explanation p {
+
+    max-width: 450px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================
+   FEATURED POSTER
+========================= */
+
+.featured-visual {
+
+    position: relative;
+
+    min-height: 560px;
+
+    overflow: hidden;
+
+    background: #181717;
+
+}
+
+
+.featured-visual img {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 560px;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.featured-movie:hover .featured-visual img {
+
+    transform: scale(1.02);
+
+}
+
+
+/* =========================
+   OTHER MOVIES
+========================= */
+
+.other-movies {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.movie-card {
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    transition:
+
+        transform 0.25s ease,
+
+        border-color 0.25s ease;
+
+}
+
+
+.movie-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color: var(--accent);
+
+}
+
+
+.card-number {
+
+    padding: 16px 18px 0;
+
+    color: var(--accent);
+
+    font-size: 11px;
+
+    letter-spacing: 0.15em;
+
+}
+
+
+/* =========================
+   MOVIE CARD POSTER
+========================= */
+
+.card-visual {
+
+    height: 260px;
+
+    margin-top: 10px;
+
+    overflow: hidden;
+
+    background: #181717;
+
+}
+
+
+.card-visual img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.movie-card:hover .card-visual img {
+
+    transform: scale(1.03);
+
+}
+
+
+.card-content {
+
+    padding: 22px;
+
+}
+
+
+.card-content h3 {
+
+    margin: 0 0 10px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+}
+
+
+.card-match {
+
+    color: var(--accent);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+
+    margin-bottom: 12px;
+
+}
+
+
+.card-meta,
+
+.card-genres {
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+}
+
+
+.card-genres {
+
+    margin-top: 6px;
+
+}
+
+
+/* =========================
+   ANSWERS
+========================= */
+
+.answers-section {
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+    margin-bottom: 100px;
+
+}
+
+
+.answers-section summary {
+
+    list-style: none;
+
+    cursor: pointer;
+
+    padding: 24px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: var(--text);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.18em;
+
+}
+
+
+.answers-section summary::-webkit-details-marker {
+
+    display: none;
+
+}
+
+
+.details-arrow {
+
+    color: var(--accent);
+
+    transition: transform 0.25s ease;
+
+}
+
+
+.answers-section details[open] .details-arrow {
+
+    transform: rotate(180deg);
+
+}
+
+
+.answers-content {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+
+    padding: 10px 0 35px;
+
+}
+
+
+.answer {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================
+   RESTART
+========================= */
+
+.restart-section {
+
+    text-align: center;
+
+    padding: 30px 0;
+
+}
+
+
+.restart-link {
+
+    color: var(--text);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid var(--accent);
+
+    padding-bottom: 4px;
+
+}
+
+
+.restart-section p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    margin-top: 12px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+
+    padding: 30px 32px;
+
+    border-top: 1px solid var(--border);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    letter-spacing: 0.14em;
+
+}
+
+
+.instagram-link {
+
+    color: var(--muted);
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: 0.14em;
+
+    transition: color 0.25s ease;
+
+}
+
+
+.instagram-link:hover {
+
+    color: var(--accent);
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .featured-movie {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .featured-visual {
+
+        min-height: 420px;
+
+        order: -1;
+
+    }
+
+
+    .featured-visual img {
+
+        min-height: 420px;
+
+    }
+
+
+    .other-movies {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .site-header {
+
+        padding: 20px;
+
+    }
+
+
+    .profile-page {
+
+        padding: 60px 20px 80px;
+
+    }
+
+
+    .dna-row {
+
+        grid-template-columns: 120px 1fr 55px;
+
+        gap: 12px;
+
+    }
+
+
+    .dna-name {
+
+        font-size: 12px;
+
+    }
+
+
+    .featured-info {
+
+        padding: 30px;
+
+    }
+
+
+    .featured-visual {
+
+        min-height: 420px;
+
+    }
+
+
+    .featured-visual img {
+
+        min-height: 420px;
+
+    }
+
+
+    .other-movies {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .section-heading {
+
+        display: block;
+
+    }
+
+
+    .heading-note {
+
+        margin-top: 15px;
+
+    }
+
+
+    .answers-content {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .site-footer {
+
+        padding: 25px 20px;
+
+        display: block;
+
+    }
+
+}
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page {
+
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+
+    padding: 0 32px;
+
+}
+
+
+/* =========================
+   HOME HERO
+========================= */
+
+.home-hero {
+
+    min-height: 720px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 90px 0 120px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.home-label {
+
+    color: var(--accent);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.22em;
+
+    margin-bottom: 25px;
+
+}
+
+
+.home-hero h1 {
+
+    max-width: 1000px;
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(64px, 9vw, 120px);
+
+    font-weight: 500;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.045em;
+
+}
+
+
+.home-hero h1 em {
+
+    display: block;
+
+    color: var(--accent);
+
+    font-style: normal;
+
+}
+
+
+.home-description {
+
+    max-width: 540px;
+
+    margin: 38px 0 45px;
+
+    color: var(--muted);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+.discover-button {
+
+    width: fit-content;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 45px;
+
+    padding: 16px 20px;
+
+    border: 1px solid var(--text);
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+
+    transition:
+
+        background 0.25s ease,
+
+        color 0.25s ease,
+
+        border-color 0.25s ease;
+
+}
+
+
+.discover-button:hover {
+
+    background: var(--text);
+
+    color: var(--background);
+
+}
+
+
+.button-arrow {
+
+    color: var(--accent);
+
+    font-size: 18px;
+
+    line-height: 1;
+
+}
+
+
+.discover-button:hover .button-arrow {
+
+    color: var(--background);
+
+}
+
+
+/* =========================
+   HOME INTRODUCTION
+========================= */
+
+.home-introduction {
+
+    display: grid;
+
+    grid-template-columns: 170px 1fr;
+
+    gap: 80px;
+
+    padding: 120px 0;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.home-intro-number {
+
+    color: var(--accent);
+
+    font-size: 11px;
+
+    letter-spacing: 0.18em;
+
+}
+
+
+.home-intro-content {
+
+    max-width: 800px;
+
+}
+
+
+.home-intro-content h2 {
+
+    margin: 0 0 30px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 5vw, 70px);
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    letter-spacing: -0.035em;
+
+}
+
+
+.home-intro-content p {
+
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+}
+
+
+/* =========================
+   HOME PROCESS
+========================= */
+
+.home-process {
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 0;
+
+    padding: 90px 0 120px;
+
+}
+
+
+.process-item {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+
+.process-item span {
+
+    display: block;
+
+    color: var(--accent);
+
+    font-size: 11px;
+
+    letter-spacing: 0.18em;
+
+    margin-bottom: 22px;
+
+}
+
+
+.process-item h3 {
+
+    margin: 0 0 14px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+}
+
+
+.process-item p {
+
+    max-width: 250px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.75;
+
+}
+
+
+.process-divider {
+
+    width: 50px;
+
+    height: 1px;
+
+    margin: 8px 30px 0;
+
+    flex-shrink: 0;
+
+    background: var(--border);
+
+}
+
+
+/* =========================
+   HOME HEADER
+========================= */
+
+.home-header-note {
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.18em;
+
+}
+
+
+/* =========================
+   HOME RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .home-hero {
+
+        min-height: 620px;
+
+    }
+
+
+    .home-introduction {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .home-process {
+
+        flex-direction: column;
+
+        gap: 45px;
+
+    }
+
+
+    .process-divider {
+
+        display: none;
+
+    }
+
+}
+
+
+/* =========================
+   QUIZ PAGE
+========================= */
+
+.quiz-page {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 90px 32px 120px;
+
+}
+
+
+.quiz-question {
+
+    max-width: 850px;
+
+    margin-bottom: 70px;
+
+}
+
+
+.quiz-kicker {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: var(--accent);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+
+    margin-bottom: 28px;
+
+}
+
+
+.quiz-kicker span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background: var(--border);
+
+}
+
+
+.quiz-question h1 {
+
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 6vw, 78px);
+
+    font-weight: 500;
+
+    line-height: 1.02;
+
+    letter-spacing: -0.035em;
+
+}
+
+
+/* =========================
+   QUIZ OPTIONS
+========================= */
+
+.quiz-options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+
+.quiz-option {
+
+    width: 100%;
+
+    min-height: 105px;
+
+    display: grid;
+
+    grid-template-columns: 155px minmax(0, 1fr) 40px;
+
+    align-items: center;
+
+    column-gap: 35px;
+
+    padding: 22px 25px;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-family: "DM Sans", sans-serif;
+
+    transition:
+
+        border-color 0.25s ease,
+
+        background 0.25s ease,
+
+        transform 0.25s ease;
+
+}
+
+
+.quiz-option:hover {
+
+    border-color: var(--accent);
+
+    background: #fffdfa;
+
+    transform: translateX(5px);
+
+}
+
+
+.option-letter {
+
+    display: block;
+
+    color: var(--accent);
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.18em;
+
+    text-transform: lowercase;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+
+}
+
+
+.option-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    min-width: 0;
+
+}
+
+
+.option-content strong {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+}
+
+
+.option-content span {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+.option-arrow {
+
+    color: var(--accent);
+
+    font-size: 20px;
+
+    text-align: right;
+
+    transition: transform 0.25s ease;
+
+}
+
+
+.quiz-option:hover .option-arrow {
+
+    transform: translateX(4px);
+
+}
+
+
+.quiz-footer {
+
+    margin-top: 55px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--light-muted);
+
+    font-size: 10px;
+
+    letter-spacing: 0.18em;
+
+}
+
+
+.quiz-progress-label {
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    letter-spacing: 0.16em;
+
+}
+
+
+/* =========================
+   QUIZ RESPONSIVE
+========================= */
+
+@media (max-width: 650px) {
+
+    .quiz-page {
+
+        padding: 65px 20px 80px;
+
+    }
+
+
+    .quiz-question {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .quiz-question h1 {
+
+        font-size: clamp(42px, 12vw, 62px);
+
+    }
+
+
+    .quiz-option {
+
+        grid-template-columns: 90px minmax(0, 1fr) 25px;
+
+        gap: 18px;
+
+        padding: 20px;
+
+    }
+
+
+    .option-content strong {
+
+        font-size: 19px;
+
+    }
+
+
+    .option-content span {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+.site-footer {
+
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+
+    padding: 45px 32px;
+
+    border-top: 1px solid var(--border);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: var(--muted);
+
+}
+
+
+.footer-brand {
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+
+}
+
+
+.footer-creator {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+}
+
+
+.footer-creator span {
+
+    color: var(--accent);
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.18em;
+
+}
+
+
+.footer-creator strong {
+
+    color: var(--text);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 19px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.01em;
+
+}
+
+
+.instagram-link {
+
+    color: var(--muted);
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: 0.14em;
+
+    transition: color 0.25s ease;
+
+}
+
+
+.instagram-link:hover {
+
+    color: var(--accent);
+
+}
+
+@media (max-width: 650px) {
+
+    .site-footer {
+
+        padding: 35px 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+
+    }
+
+}
