@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover Your Cinema DNA · Alive in Cinema</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<style>
+
+.quiz-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 90px 32px 120px;
+}
+
+.quiz-question {
+    max-width: 850px;
+    margin-bottom: 70px;
+}
+
+.quiz-kicker {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    margin-bottom: 28px;
+}
+
+.quiz-kicker span {
+    width: 35px;
+    height: 1px;
+    background: var(--border);
+}
+
+.quiz-question h1 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 6vw, 78px);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+}
+
+
+/* OPTIONS */
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.quiz-option {
+    width: 100%;
+    min-height: 105px;
+
+    display: grid;
+    grid-template-columns: 155px minmax(0, 1fr) 40px;
+
+    align-items: center;
+    column-gap: 35px;
+
+    padding: 22px 25px;
+
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+
+    text-align: left;
+    cursor: pointer;
+
+    font-family: "DM Sans", sans-serif;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.quiz-option:hover {
+    border-color: var(--accent);
+    background: #fffdfa;
+    transform: translateX(5px);
+}
+
+.option-letter {
+    display: block;
+
+    color: var(--accent);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 0.18em;
+    text-transform: lowercase;
+
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.option-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.option-content strong {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.option-content span {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.option-arrow {
+    color: var(--accent);
+    font-size: 20px;
+    text-align: right;
+    transition: transform 0.25s ease;
+}
+
+.quiz-option:hover .option-arrow {
+    transform: translateX(4px);
+}
+
+
+/* QUIZ FOOTER */
+
+.quiz-footer {
+    margin-top: 55px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+
+    color: var(--light-muted);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+}
+
+
+/* PROGRESS */
+
+.quiz-progress-label {
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .quiz-page {
+        padding: 65px 20px 80px;
+    }
+
+    .quiz-question {
+        margin-bottom: 45px;
+    }
+
+    .quiz-question h1 {
+        font-size: clamp(42px, 12vw, 62px);
+    }
+
+    .quiz-option {
+        grid-template-columns: 110px minmax(0, 1fr) 25px;
+        column-gap: 18px;
+        padding: 20px;
+    }
+
+    .option-content strong {
+        font-size: 19px;
+    }
+
+    .option-content span {
+        font-size: 12px;
+    }
+
+}
+</style>
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="/" class="brand">
+            ALIVE <span>IN</span> CINEMA
+        </a>
+
+        <div class="quiz-progress-label">
+            {{ "%02d"|format(question_number + 1) }}
+            /
+            {{ "%02d"|format(total_questions) }}
+        </div>
+
+    </header>
+
+
+    <main class="quiz-page">
+
+
+        <section class="quiz-question">
+
+            <div class="quiz-kicker">
+
+                QUESTION
+                {{ "%02d"|format(question_number + 1) }}
+
+                <span></span>
+
+                {{ "%02d"|format(total_questions) }}
+
+            </div>
+
+
+            <h1>
+                {{ question.question }}
+            </h1>
+
+        </section>
+
+
+        <form
+            method="POST"
+            action="/quiz"
+            class="quiz-options"
+        >
+
+            <input
+                type="hidden"
+                name="question_number"
+                value="{{ question_number }}"
+            >
+
+
+            {% for option in question.options %}
+
+                <button
+                    type="submit"
+                    name="answer"
+                    value="{{ option[0] }}"
+                    class="quiz-option"
+                >
+
+                    <span class="option-letter">
+                        {{ option[0] }}
+                    </span>
+
+
+                    <span class="option-content">
+
+                        <strong>
+                            {{ option[1] }}
+                        </strong>
+
+                        <span>
+                            {{ option[2] }}
+                        </span>
+
+                    </span>
+
+
+                    <span class="option-arrow">
+                        →
+                    </span>
+
+                </button>
+
+            {% endfor %}
+
+        </form>
+
+
+        <div class="quiz-footer">
+
+            <span>
+                YOUR ANSWERS SHAPE YOUR CINEMA DNA
+            </span>
+
+        </div>
+
+
+    </main>
+
+
+    </main>
+
+
+
+<footer class="site-footer">
+
+    <div>
+        ALIVE IN CINEMA
+    </div>
+
+    <div class="copyright">
+        © 2026 Aditya Pratap Singh
+    </div>
+
+</footer>
+
+</body>
+
+</html>

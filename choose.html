@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alive in Cinema</title>
+
+</head>
+
+<body>
+
+    <p>
+        Choice {{ choice_number + 1 }} of {{ total_choices }}
+    </p>
+
+    <h1>
+        Which sounds more appealing?
+    </h1>
+
+
+    <form method="POST">
+
+
+        <button
+            type="submit"
+            name="selected"
+            value="{{ movie_a.title }}"
+        >
+
+            <h2>
+                {{ movie_a.title }}
+            </h2>
+
+            <p>
+                {{ movie_a.year }}
+            </p>
+
+            <p>
+                {{ movie_a.genres }}
+            </p>
+
+        </button>
+
+
+        <br>
+        <br>
+
+
+        <button
+            type="submit"
+            name="selected"
+            value="{{ movie_b.title }}"
+        >
+
+            <h2>
+                {{ movie_b.title }}
+            </h2>
+
+            <p>
+                {{ movie_b.year }}
+            </p>
+
+            <p>
+                {{ movie_b.genres }}
+            </p>
+
+        </button>
+
+
+        <br>
+        <br>
+
+
+        <button
+            type="submit"
+            name="selected"
+            value="neither"
+        >
+
+            Neither / I haven't seen either
+
+        </button>
+
+    </form>
+
+</body>
+
+</html>

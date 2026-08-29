@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Cinema DNA · Alive in Cinema</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="/" class="brand">
+            ALIVE <span>IN</span> CINEMA
+        </a>
+
+        <a href="/reset" class="header-button">
+            START AGAIN
+        </a>
+
+    </header>
+
+
+    <main class="profile-page">
+
+
+        <!-- CINEMA DNA INTRODUCTION -->
+
+        <section class="dna-intro">
+
+            <div class="section-label">
+                YOUR CINEMA DNA
+            </div>
+
+            <h1>
+                This is your<br>
+                cinematic personality.
+            </h1>
+
+            <p class="intro-text">
+                We've analyzed your answers and created your Cinema DNA —
+                a unique blend of the stories, emotions, and experiences
+                that move you.
+            </p>
+
+            <p class="cinema-statement">
+                {{ cinema_statement }}
+            </p>
+
+        </section>
+
+
+        <!-- CINEMA DNA -->
+
+        <section class="dna-section">
+
+            <div class="dna-list">
+
+                {% for attribute, score in dna.items() %}
+
+                    <div class="dna-row">
+
+                        <div class="dna-name">
+                            {{ attribute.replace("_", " ").title() }}
+                        </div>
+
+                        <div class="dna-bar">
+
+                            <div
+                                class="dna-fill"
+                                style="width: {{ score * 10 }}%;"
+                            ></div>
+
+                        </div>
+
+                        <div class="dna-score">
+                            {{ score }}/10
+                        </div>
+
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+        </section>
+
+
+        <!-- RECOMMENDATIONS -->
+
+        <section class="movies-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <div class="section-label">
+                        YOUR STRONGEST MATCHES
+                    </div>
+
+                    <h2>
+                        Movies for you.
+                    </h2>
+
+                </div>
+
+                <div class="heading-note">
+                    Based on your Cinema DNA
+                </div>
+
+            </div>
+
+
+            {% for recommendation in recommendations %}
+
+                {% if loop.first %}
+
+                    <!-- FEATURED MOVIE -->
+
+                    <article class="featured-movie">
+
+                        <div class="featured-info">
+
+                            <div class="movie-number">
+                                01
+                            </div>
+
+                            <h3>
+                                {{ recommendation.movie.title }}
+                            </h3>
+
+                            <div class="match-score">
+                                {{ recommendation.match }}%
+                                <span>MATCH</span>
+                            </div>
+
+                            <div class="movie-meta">
+
+                                {{ recommendation.movie.year }}
+
+                                <span>•</span>
+
+                                {{ recommendation.movie.country }}
+
+                                <span>•</span>
+
+                                {{ recommendation.movie.genres }}
+
+                            </div>
+
+                            <div class="match-explanation">
+
+                                <div class="explanation-label">
+                                    WHY THIS MATCHES YOU
+                                </div>
+
+                                <p>
+                                    {{ recommendation.explanation }}
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FEATURED POSTER -->
+
+                        <div class="featured-visual">
+
+                            <img
+                                src="{{ url_for('static', filename='posters/' ~ recommendation.poster) }}"
+                                alt="{{ recommendation.movie.title }} poster"
+                            >
+
+                        </div>
+
+                    </article>
+
+
+                {% else %}
+
+                    <!-- OTHER MOVIES -->
+
+                    {% if loop.index == 2 %}
+
+                        <div class="other-movies">
+
+                    {% endif %}
+
+
+                            <article class="movie-card">
+
+                                <div class="card-number">
+                                    0{{ loop.index }}
+                                </div>
+
+
+                                <!-- MOVIE POSTER -->
+
+                                <div class="card-visual">
+
+                                    <img
+                                        src="{{ url_for('static', filename='posters/' ~ recommendation.poster) }}"
+                                        alt="{{ recommendation.movie.title }} poster"
+                                    >
+
+                                </div>
+
+
+                                <div class="card-content">
+
+                                    <h3>
+                                        {{ recommendation.movie.title }}
+                                    </h3>
+
+                                    <div class="card-match">
+                                        {{ recommendation.match }}% MATCH
+                                    </div>
+
+                                    <div class="card-meta">
+
+                                        {{ recommendation.movie.year }}
+
+                                        <span>•</span>
+
+                                        {{ recommendation.movie.country }}
+
+                                    </div>
+
+                                    <div class="card-genres">
+                                        {{ recommendation.movie.genres }}
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                    {% if loop.last %}
+
+                        </div>
+
+                    {% endif %}
+
+                {% endif %}
+
+            {% endfor %}
+
+        </section>
+
+
+        <!-- QUIZ ANSWERS -->
+
+        <section class="answers-section">
+
+            <details>
+
+                <summary>
+
+                    <span>
+                        YOUR QUIZ ANSWERS
+                    </span>
+
+                    <span class="details-arrow">
+                        ↓
+                    </span>
+
+                </summary>
+
+
+                <div class="answers-content">
+
+                    {% for answer in answers %}
+
+                        <div class="answer">
+                            {{ answer.replace("_", " ").title() }}
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </details>
+
+        </section>
+
+
+        <!-- START AGAIN -->
+
+        <section class="restart-section">
+
+            <a href="/reset" class="restart-link">
+                Take the quiz again →
+            </a>
+
+            <p>
+                Discover how your Cinema DNA changes.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+   <footer class="site-footer">
+
+    <div class="footer-brand">
+        ALIVE IN CINEMA
+    </div>
+
+    <div class="footer-creator">
+
+        <span>CREATED BY</span>
+
+        <strong>
+            ADITYA PRATAP SINGH
+        </strong>
+
+    </div>
+
+    <a
+        href="https://www.instagram.com/aliveincinema/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-link"
+    >
+        FOLLOW @ALIVEINCINEMA
+    </a>
+
+</footer>
+
+</body>
+
+</html>
