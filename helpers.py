@@ -60,26 +60,27 @@ DNA_ATTRIBUTES = [
 
 
 def calculate_movie_match(user_dna, movie):
-
     total_difference = 0
+    total_weight = 0
 
     for attribute in DNA_ATTRIBUTES:
-
         user_score = user_dna[attribute]
         movie_score = movie[attribute]
 
+        # Give stronger importance to attributes
+        # that are more important in the user's DNA.
+        weight = 1 + (user_score / 10)
+
         difference = abs(user_score - movie_score)
 
-        total_difference += difference
-
-    maximum_difference = 10 * len(DNA_ATTRIBUTES)
+        total_difference += difference * weight
+        total_weight += 10 * weight
 
     similarity = 1 - (
-        total_difference / maximum_difference
+        total_difference / total_weight
     )
 
     return round(similarity * 100, 1)
-
 
 def get_match_dimensions(user_dna, movie):
 
